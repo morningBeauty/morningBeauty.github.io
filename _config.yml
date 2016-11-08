@@ -1,33 +1,32 @@
 # Site settings
-title: 闫肃的博客
-email: suyan0830@gmail.com
+title: 小米的屋子
+subtitle: 瀑布的水逆流而上，你不在我身旁 #副标题，站点左上角
+email: liudeyuanfe@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  闫肃的博客
+  JavaScript && React
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://xiaomibaobao.github.io" # the base hostname & protocol for your site
 rss_url: /pages/feed.xml
-author: Su Yan
-twitter:
-  username: masonsuyan
+author: Deyuan Liu
+language: zh-CN #中国人嘛，用中文
 
 # Sidebar filter
 # Choose 'tag' or 'category' as filter in sidebar.
 filter: 'category'
 
 # Social account
-twitter: masonsuyan
 # weibo:    ID
-github: suyan
+github: xiaomibaobaobao
 # codepen:  username
 # dribbble: username
 
 # avatar and Favicon
-avatar: http://7u2ho6.com1.z0.glb.clouddn.com/site-avatar.png
-favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico
+avatar: http://i1.piimg.com/567571/aef5f4c1bec1b634.jpg
+favicon: http://i1.piimg.com/567571/aef5f4c1bec1b634.jpg
 
 # disqus config
 disqus:
-  shortname: suyan-zh
+  shortname: xiaomi
 
 # google analytics config
 ga:
