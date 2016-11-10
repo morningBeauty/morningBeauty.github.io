@@ -1,50 +1,54 @@
-# Site settings
-title: 小米的屋子
-subtitle: 瀑布的水逆流而上，你不在我身旁 #副标题，站点左上角
-email: liudeyuanfe@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  JavaScript && React
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://xiaomibaobao.github.io" # the base hostname & protocol for your site
-rss_url: /pages/feed.xml
-author: Deyuan Liu
-language: zh-CN #中国人嘛，用中文
+permalink: /:year-:month-:day-:title/
+paginate: 10
+markdown: kramdown
+encoding: utf-8
 
-# Sidebar filter
-# Choose 'tag' or 'category' as filter in sidebar.
-filter: 'category'
+# 作者信息
+author: 
+  name: 刘德元
+  email: liudeyuanfe@gmail.com
+  link: morningBeauty.github.io
+  github: http://github.com/xiaomibaobao
 
-# Social account
-# weibo:    ID
-github: xiaomibaobaobao
-# codepen:  username
-# dribbble: username
+# 站点信息
+title: 小米的博客
+description: My personal note-blog.
+url: morningBeauty.github.io
+rss_url: /pages/atom.xml
 
-# avatar and Favicon
+# gavatar头像及Favicon
 avatar: http://i1.piimg.com/567571/aef5f4c1bec1b634.jpg
 favicon: http://i1.piimg.com/567571/aef5f4c1bec1b634.jpg
 
-# disqus config
-disqus:
-  shortname: xiaomi
-
-# google analytics config
+# google analytics 设置
 ga:
-  id: UA-54767140-1
-  url: yansu.org
+  id: UA-74789926-1
+  url: http://blog.jimmylv.info
 
-# Build settings
-permalink: /:year/:month/:day/:title.html
-markdown: kramdown
-highlighter: rouge
-mathjax: disabled
-sass:
-  style: compressed
+# disqus 设置
+disqus:
+  shortname: gotoshare
 
-# Jekyll Plugin
-# https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/
+# 主题设置，自动激活某个标签
+active: 思考
+
+# 首页除了最新文章外显示分类
+cates: 
+  - React
+  - 摄影
+
+# 中文本地化
+locals:
+  tags: 标签
+  about: 关于
+  newest: 最新文章
+  archive: 归档
+
 gems:
   - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
+  - jekyll-paginate
+  - jekyll/tagging
+  - jekyll-tagging-related_posts
 
+exclude:
+  - .idea/
